@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fa255bb-c759-45dd-8fbf-ee93087f89b5" name="Changes" comment="" />
+    <list default="true" id="2fa255bb-c759-45dd-8fbf-ee93087f89b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/epam/gym/eureka/SecurityConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/security/JwtAuthenticationEntryPointTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/security/JwtAuthenticationFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/security/JwtProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/security/LoginAttemptServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/security/UserDetailsServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/service/NotifyWorkloadServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/service/TraineeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/service/TrainerServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/controller/TrainerWorkloadControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/exception/GlobalExceptionHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/filter/TransactionIdFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/repository/TrainerWorkloadRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/security/JwtAuthenticationFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/security/JwtProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/java/com/epam/gym/trainerworkloadservice/service/TrainerWorkloadServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trainer-workload-service/src/test/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/test/java/com/epam/gym/eureka/EurekaServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/epam/gym/eureka/EurekaServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/service/TrainingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gym-crm-service/src/test/java/com/epam/gym/service/TrainingServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer-workload-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/trainer-workload-service/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +46,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -48,6 +75,25 @@
   "keyToString": {
     "Application.GymCrmApplication.executor": "Run",
     "JUnit.EurekaServerApplicationTests.executor": "Run",
+    "JUnit.GlobalExceptionHandlerTest.executor": "Run",
+    "JUnit.JwtAuthenticationEntryPointTest.executor": "Run",
+    "JUnit.JwtAuthenticationFilterTest.executor": "Run",
+    "JUnit.JwtProviderTest.executor": "Run",
+    "JUnit.LoginAttemptServiceTest.executor": "Run",
+    "JUnit.NotifyWorkloadServiceTest.executor": "Run",
+    "JUnit.SecurityConfigTest.executor": "Run",
+    "JUnit.TraineeServiceTest.executor": "Run",
+    "JUnit.TrainerServiceTest.executor": "Run",
+    "JUnit.TrainerWorkloadControllerTest.executor": "Run",
+    "JUnit.TrainerWorkloadRepositoryTest.executor": "Run",
+    "JUnit.TrainerWorkloadServiceTest.executor": "Run",
+    "JUnit.TrainingServiceTest.executor": "Run",
+    "JUnit.TransactionIdFilterTest.executor": "Run",
+    "JUnit.UserDetailsServiceImplTest.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.java in epam_lab_2026_hibernate.executor": "Coverage",
+    "JUnit.java in eureka.executor": "Coverage",
+    "JUnit.java in trainer-workload-service.executor": "Coverage",
     "Maven.epam_lab_2026_hibernate [clean].executor": "Run",
     "Maven.epam_lab_2026_hibernate [install].executor": "Run",
     "Maven.eureka-server [clean].executor": "Run",
@@ -60,6 +106,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.EurekaServerApplication (1).executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.GymCrmApplication.executor": "Run",
@@ -68,6 +115,7 @@
     "Spring Boot.TrainerWorkloadServiceApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-21",
     "junie.onboarding.icon.badge.shown": "true",
@@ -100,21 +148,8 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <map>
-              <entry key="EurekaServerApplication" value="STOPPED" />
-              <entry key="GymCrmServiceApplication (1)" value="STOPPED" />
-              <entry key="TrainerWorkloadServiceApplication" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TrainerWorkloadServiceApplication">
+  <component name="RunManager" selected="JUnit.java in epam_lab_2026_hibernate">
     <configuration name="GymCrmServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.GymCrmServiceApplication" />
       <module name="gym-crm-service" />
@@ -128,15 +163,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GymCrmServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.GymCrmServiceApplication" />
-      <module name="gym-crm-service" />
+    <configuration name="JwtProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="epam_lab_2026_hibernate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.*" />
+          <option name="PATTERN" value="com.epam.gym.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.epam.gym.security" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.gym.security.JwtProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginAttemptServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="epam_lab_2026_hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.gym.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.gym.security" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.gym.security.LoginAttemptServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionIdFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="epam_lab_2026_hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.gym.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.gym.filter" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.gym.filter.TransactionIdFilterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDetailsServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="epam_lab_2026_hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.gym.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.epam.gym.security" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.gym.security.UserDetailsServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in epam_lab_2026_hibernate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="epam_lab_2026_hibernate" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/gym-crm-service/src/test/java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -170,19 +260,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eureka" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.epam.gym.eureka.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.gym.eureka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GymCrmServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="epam_lab_2026_hibernate" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.epam.gym.GymCrmServiceApplication" />
@@ -196,41 +273,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GymCrmServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="epam_lab_2026_hibernate" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.epam.gym.GymCrmServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.gym.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GymCrmServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gym-crm-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.epam.gym.GymCrmServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainerWorkloadServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainerWorkloadServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="trainer-workload-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.epam.gym.trainerworkloadservice.TrainerWorkloadServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.gym.trainerworkloadservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -249,17 +294,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GymCrmServiceApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.GymCrmServiceApplication (1)" />
+      <item itemvalue="JUnit.JwtProviderTest" />
+      <item itemvalue="JUnit.LoginAttemptServiceTest" />
+      <item itemvalue="JUnit.TransactionIdFilterTest" />
+      <item itemvalue="JUnit.UserDetailsServiceImplTest" />
+      <item itemvalue="JUnit.java in epam_lab_2026_hibernate" />
+      <item itemvalue="Spring Boot.EurekaServerApplication (1)" />
       <item itemvalue="Spring Boot.TrainerWorkloadServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.TrainerWorkloadServiceApplication" />
-        <item itemvalue="Spring Boot.GymCrmServiceApplication (1)" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Application.GymCrmServiceApplication" />
+        <item itemvalue="JUnit.java in epam_lab_2026_hibernate" />
+        <item itemvalue="JUnit.TransactionIdFilterTest" />
+        <item itemvalue="JUnit.UserDetailsServiceImplTest" />
+        <item itemvalue="JUnit.LoginAttemptServiceTest" />
+        <item itemvalue="JUnit.JwtProviderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,11 +338,17 @@
       <workItem from="1776897649470" duration="2222000" />
       <workItem from="1776900646063" duration="680000" />
       <workItem from="1776901363811" duration="2104000" />
+      <workItem from="1776904825943" duration="3338000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gym_microservices$java_in_epam_lab_2026_hibernate.ic" NAME="java in epam_lab_2026_hibernate Coverage Results" MODIFIED="1776907530198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/gym_microservices$java_in_trainer_workload_service.ic" NAME="java in trainer-workload-service Coverage Results" MODIFIED="1776906363534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/gym_microservices$java_in_eureka.ic" NAME="java in eureka Coverage Results" MODIFIED="1776905309120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
