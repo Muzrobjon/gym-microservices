@@ -10,6 +10,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import java.time.LocalDate;
+
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -18,7 +19,7 @@ public class NotifyWorkloadService {
     private final TrainerWorkloadClient trainerWorkloadClient;
 
     public void sendNotification(Trainer trainer, LocalDate trainingDate,
-                                  Integer duration, TrainerWorkloadRequest.ActionType actionType) {
+                                 Integer duration, TrainerWorkloadRequest.ActionType actionType) {
         try {
             String authHeader = getAuthorizationHeader();
             String transactionId = getTransactionId();
@@ -50,6 +51,10 @@ public class NotifyWorkloadService {
             // Don't fail the main operation - circuit breaker handles this
         }
     }
+
+    // TODO:
+    //  Are you using calling user token for internal communication between services?
+    //  If so, consider using a special service token for such calls
     private String getAuthorizationHeader() {
         ServletRequestAttributes attributes =
                 (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
