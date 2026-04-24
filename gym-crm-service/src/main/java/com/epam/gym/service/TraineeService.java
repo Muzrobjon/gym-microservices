@@ -6,7 +6,6 @@ import com.epam.gym.dto.request.UpdateTraineeRequest;
 import com.epam.gym.dto.response.RegistrationResponse;
 import com.epam.gym.entity.Trainee;
 import com.epam.gym.entity.Trainer;
-import com.epam.gym.entity.Training;
 import com.epam.gym.entity.User;
 import com.epam.gym.exception.NotFoundException;
 import com.epam.gym.exception.ValidationException;

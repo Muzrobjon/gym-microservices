@@ -46,21 +46,23 @@ public class TrainerWorkloadController {
     @GetMapping("/{trainerUsername}")
     public ResponseEntity<TrainerWorkloadResponse> getTrainerWorkload(
             @PathVariable String trainerUsername,
+            @RequestParam(required = false) Integer year,
+            @RequestParam(required = false) Integer month,
             HttpServletRequest httpRequest) {
 
         String transactionId = getTransactionId(httpRequest);
 
-        log.info("[TransactionId: {}] Received get workload request for trainer: {}",
-                transactionId, trainerUsername);
+        log.info("[TransactionId: {}] Received get workload request for trainer: {}, year: {}, month: {}",
+                transactionId, trainerUsername, year, month);
 
-        TrainerWorkloadResponse response = workloadService.getTrainerWorkload(trainerUsername, transactionId);
+        TrainerWorkloadResponse response = workloadService
+                .getTrainerWorkload(trainerUsername, year, month, transactionId);
 
         log.info("[TransactionId: {}] Returning workload for trainer: {} - Status: 200 OK",
                 transactionId, trainerUsername);
 
         return ResponseEntity.ok(response);
     }
-
     private String getTransactionId(HttpServletRequest request) {
         String transactionId = request.getHeader("X-Transaction-Id");
         if (transactionId == null || transactionId.isEmpty()) {

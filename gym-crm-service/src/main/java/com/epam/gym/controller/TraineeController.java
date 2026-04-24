@@ -16,7 +16,6 @@ import com.epam.gym.exception.ValidationException;
 import com.epam.gym.mapper.TraineeMapper;
 import com.epam.gym.mapper.TrainerMapper;
 import com.epam.gym.mapper.TrainingMapper;
-import com.epam.gym.mapper.UserMapper;
 import com.epam.gym.service.TraineeService;
 import com.epam.gym.service.TrainingService;
 import com.epam.gym.service.UserService;

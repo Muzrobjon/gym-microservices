@@ -10,7 +10,6 @@ import com.epam.gym.entity.Trainer;
 import com.epam.gym.entity.Training;
 import com.epam.gym.mapper.TrainerMapper;
 import com.epam.gym.mapper.TrainingMapper;
-import com.epam.gym.mapper.UserMapper;
 import com.epam.gym.service.TrainerService;
 import com.epam.gym.service.TrainingService;
 import com.epam.gym.service.UserService;

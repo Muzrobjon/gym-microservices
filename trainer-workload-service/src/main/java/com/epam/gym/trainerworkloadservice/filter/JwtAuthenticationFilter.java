@@ -2,8 +2,9 @@
 //  I'd recommend to flatten this package: SecurityConfig goes to existing config package, possibly under 'security'
 //  subpackage,JwtProvider can go there as well or under 'service' and JwtFilter goes to existing 'filter';
 
-package com.epam.gym.trainerworkloadservice.security;
+package com.epam.gym.trainerworkloadservice.filter;
 
+import com.epam.gym.trainerworkloadservice.config.service.JwtProvider;
 import jakarta.annotation.Nonnull;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -28,14 +29,31 @@ import java.util.Collections;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtProvider jwtProvider;
+    private final ServiceTokenFilter serviceTokenFilter;
 
     @Override
     protected void doFilterInternal(@Nonnull HttpServletRequest request,
                                     @Nonnull HttpServletResponse response,
                                     @Nonnull FilterChain filterChain) throws ServletException, IOException {
         try {
-            String jwt = extractJwtFromRequest(request);
+            String authHeader = request.getHeader("Authorization");
 
+            if (serviceTokenFilter.isValidServiceCall(authHeader)) {
+                UsernamePasswordAuthenticationToken authentication =
+                        new UsernamePasswordAuthenticationToken(
+                                "gym-crm-service",
+                                null,
+                                Collections.singletonList(new SimpleGrantedAuthority("ROLE_SERVICE"))
+                        );
+                authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+                log.debug("Authenticated internal service call");
+                filterChain.doFilter(request, response);
+                return;
+            }
+
+
+            String jwt = extractJwtFromRequest(request);
             if (StringUtils.hasText(jwt) && jwtProvider.validateToken(jwt)) {
                 String username = jwtProvider.getUsernameFromToken(jwt);
 
@@ -45,12 +63,11 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                                 null,
                                 Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"))
                         );
-
                 authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(authentication);
-
                 log.debug("Authenticated user from JWT: {}", username);
             }
+
         } catch (Exception e) {
             log.error("Cannot set user authentication: {}", e.getMessage());
         }

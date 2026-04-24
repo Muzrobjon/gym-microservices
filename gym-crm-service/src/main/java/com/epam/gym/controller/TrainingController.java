@@ -6,7 +6,6 @@ import com.epam.gym.entity.TrainingType;
 import com.epam.gym.mapper.TrainingTypeMapper;
 import com.epam.gym.service.TrainingService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

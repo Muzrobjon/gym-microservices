@@ -71,70 +71,70 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GymCrmApplication.executor": "Run",
-    "JUnit.EurekaServerApplicationTests.executor": "Run",
-    "JUnit.GlobalExceptionHandlerTest.executor": "Run",
-    "JUnit.JwtAuthenticationEntryPointTest.executor": "Run",
-    "JUnit.JwtAuthenticationFilterTest.executor": "Run",
-    "JUnit.JwtProviderTest.executor": "Run",
-    "JUnit.LoginAttemptServiceTest.executor": "Run",
-    "JUnit.NotifyWorkloadServiceTest.executor": "Run",
-    "JUnit.SecurityConfigTest.executor": "Run",
-    "JUnit.TraineeServiceTest.executor": "Run",
-    "JUnit.TrainerServiceTest.executor": "Run",
-    "JUnit.TrainerWorkloadControllerTest.executor": "Run",
-    "JUnit.TrainerWorkloadRepositoryTest.executor": "Run",
-    "JUnit.TrainerWorkloadServiceTest.executor": "Run",
-    "JUnit.TrainingServiceTest.executor": "Run",
-    "JUnit.TransactionIdFilterTest.executor": "Run",
-    "JUnit.UserDetailsServiceImplTest.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "JUnit.java in epam_lab_2026_hibernate.executor": "Coverage",
-    "JUnit.java in eureka.executor": "Coverage",
-    "JUnit.java in trainer-workload-service.executor": "Coverage",
-    "Maven.epam_lab_2026_hibernate [clean].executor": "Run",
-    "Maven.epam_lab_2026_hibernate [install].executor": "Run",
-    "Maven.eureka-server [clean].executor": "Run",
-    "Maven.eureka-server [install].executor": "Run",
-    "Maven.trainer-workload-service [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.EurekaServerApplication (1).executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.GymCrmApplication.executor": "Run",
-    "Spring Boot.GymCrmServiceApplication (1).executor": "Run",
-    "Spring Boot.GymCrmServiceApplication.executor": "Run",
-    "Spring Boot.TrainerWorkloadServiceApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-21",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/java_laboratory/Spring_advanced/gym-microservices",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GymCrmApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EurekaServerApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GlobalExceptionHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JwtAuthenticationEntryPointTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JwtAuthenticationFilterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JwtProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginAttemptServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.NotifyWorkloadServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SecurityConfigTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TraineeServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainerServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainerWorkloadControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainerWorkloadRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainerWorkloadServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TrainingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionIdFilterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserDetailsServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in epam_lab_2026_hibernate.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.java in eureka.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.java in trainer-workload-service.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.epam_lab_2026_hibernate [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.epam_lab_2026_hibernate [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.trainer-workload-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EurekaServerApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GymCrmApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GymCrmServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GymCrmServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TrainerWorkloadServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-21&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/java_laboratory/Spring_advanced/gym-microservices&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.epam.gym.trainerworkloadservice.SwaggerConfig" />
@@ -149,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.java in epam_lab_2026_hibernate">
+  <component name="RunManager" selected="Spring Boot.GymCrmServiceApplication (1)">
     <configuration name="GymCrmServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.GymCrmServiceApplication" />
       <module name="gym-crm-service" />
@@ -294,6 +294,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GymCrmServiceApplication" />
       <item itemvalue="JUnit.JwtProviderTest" />
       <item itemvalue="JUnit.LoginAttemptServiceTest" />
       <item itemvalue="JUnit.TransactionIdFilterTest" />
@@ -301,14 +302,16 @@
       <item itemvalue="JUnit.java in epam_lab_2026_hibernate" />
       <item itemvalue="Spring Boot.EurekaServerApplication (1)" />
       <item itemvalue="Spring Boot.TrainerWorkloadServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.GymCrmServiceApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GymCrmServiceApplication (1)" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="JUnit.java in epam_lab_2026_hibernate" />
         <item itemvalue="JUnit.TransactionIdFilterTest" />
         <item itemvalue="JUnit.UserDetailsServiceImplTest" />
-        <item itemvalue="JUnit.LoginAttemptServiceTest" />
-        <item itemvalue="JUnit.JwtProviderTest" />
       </list>
     </recent_temporary>
   </component>

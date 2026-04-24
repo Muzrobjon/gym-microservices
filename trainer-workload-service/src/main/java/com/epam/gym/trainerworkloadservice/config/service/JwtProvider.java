@@ -1,4 +1,4 @@
-package com.epam.gym.trainerworkloadservice.security;
+package com.epam.gym.trainerworkloadservice.config.service;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

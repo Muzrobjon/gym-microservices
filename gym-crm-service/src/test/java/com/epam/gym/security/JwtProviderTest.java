@@ -26,13 +26,13 @@ class JwtProviderTest {
     @Mock
     private Authentication authentication;
 
-    private final String secret = "your-very-long-secret-key-that-must-be-at-least-32-characters";
-    private final long expiration = 3600000; // 1 hour
-
     @BeforeEach
     void setUp() {
         // Injecting @Value fields manually
+        String secret = "your-very-long-secret-key-that-must-be-at-least-32-characters";
         ReflectionTestUtils.setField(jwtProvider, "jwtSecret", secret);
+        // 1 hour
+        long expiration = 3600000;
         ReflectionTestUtils.setField(jwtProvider, "jwtExpiration", expiration);
     }
 

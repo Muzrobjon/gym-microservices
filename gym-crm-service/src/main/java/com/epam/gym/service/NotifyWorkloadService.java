@@ -3,6 +3,7 @@ package com.epam.gym.service;
 import com.epam.gym.client.TrainerWorkloadClient;
 import com.epam.gym.dto.request.TrainerWorkloadRequest;
 import com.epam.gym.entity.Trainer;
+import com.epam.gym.security.ServiceTokenProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -17,11 +18,14 @@ import java.time.LocalDate;
 public class NotifyWorkloadService {
 
     private final TrainerWorkloadClient trainerWorkloadClient;
+    private final ServiceTokenProvider serviceTokenProvider; // yangi component
 
     public void sendNotification(Trainer trainer, LocalDate trainingDate,
                                  Integer duration, TrainerWorkloadRequest.ActionType actionType) {
         try {
-            String authHeader = getAuthorizationHeader();
+            String serviceToken = serviceTokenProvider.getServiceToken();
+            String authHeader = "Bearer " + serviceToken;
+
             String transactionId = getTransactionId();
 
             TrainerWorkloadRequest workloadRequest = TrainerWorkloadRequest.builder()
@@ -55,15 +59,6 @@ public class NotifyWorkloadService {
     // TODO:
     //  Are you using calling user token for internal communication between services?
     //  If so, consider using a special service token for such calls
-    private String getAuthorizationHeader() {
-        ServletRequestAttributes attributes =
-                (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        if (attributes != null) {
-            String auth = attributes.getRequest().getHeader("Authorization");
-            return auth != null ? auth : "";
-        }
-        return "";
-    }
 
     private String getTransactionId() {
         ServletRequestAttributes attributes =

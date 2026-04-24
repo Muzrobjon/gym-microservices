@@ -1,6 +1,5 @@
 package com.epam.gym.service;
 
-import com.epam.gym.client.TrainerWorkloadClient;
 import com.epam.gym.dto.request.AddTrainingRequest;
 import com.epam.gym.dto.request.TrainerWorkloadRequest;
 import com.epam.gym.entity.Trainee;
@@ -8,23 +7,18 @@ import com.epam.gym.entity.Trainer;
 import com.epam.gym.entity.Training;
 import com.epam.gym.entity.TrainingType;
 import com.epam.gym.enums.TrainingTypeName;
-import com.epam.gym.exception.NotFoundException;
 import com.epam.gym.exception.ValidationException;
 import com.epam.gym.metrics.TrainingMetrics;
 import com.epam.gym.repository.TrainingRepository;
 import com.epam.gym.repository.TrainingTypeRepository;
 import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Timer;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;

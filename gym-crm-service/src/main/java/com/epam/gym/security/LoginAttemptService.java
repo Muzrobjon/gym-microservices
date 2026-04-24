@@ -25,7 +25,7 @@ public class LoginAttemptService {
     public LoginAttemptService() {
         attemptsCache = CacheBuilder.newBuilder()
                 .expireAfterWrite(5, TimeUnit.MINUTES) // Fixed: use constant instead of field
-                .build(new CacheLoader<String, Integer>() {
+                .build(new CacheLoader<>() {
                     @Override
                     public Integer load(String key) {
                         return 0;

@@ -1,5 +1,6 @@
 package com.epam.gym.trainerworkloadservice.dto;
 
+import com.epam.gym.trainerworkloadservice.enums.ActionType;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

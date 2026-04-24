@@ -19,7 +19,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)

@@ -30,6 +30,11 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
 
+service:
+  internal:
+    token: ${INTERNAL_SERVICE_TOKEN:gym-service-internal-token-2024}
+
+
 jwt:
   secret: ${JWT_SECRET:mySecretKeyForJWTTokenGenerationWhichShouldBeLongEnough123456789}
   expiration: ${JWT_EXPIRATION:7200000}
