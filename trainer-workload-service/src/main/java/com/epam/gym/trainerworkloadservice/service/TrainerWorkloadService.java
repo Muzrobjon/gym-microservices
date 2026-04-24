@@ -1,8 +1,6 @@
 package com.epam.gym.trainerworkloadservice.service;
 
 
-
-
 import com.epam.gym.trainerworkloadservice.dto.ActionType;
 import com.epam.gym.trainerworkloadservice.dto.TrainerWorkloadRequest;
 import com.epam.gym.trainerworkloadservice.dto.TrainerWorkloadResponse;
@@ -35,6 +33,11 @@ public class TrainerWorkloadService {
                 .findByTrainerUsernameAndYearAndMonth(
                         request.getTrainerUsername(), year, month);
 
+        // TODO:
+        //  Ideally implementation of ADD/DELETE should be different only in operation sign.
+        //  The flow is same (pseudo-code):
+        //  parseDate -> (year, month) -> findExistingRecord.orElseNew -> validate boundaries
+        //  (no more than total hours in month, no less than 0) -> updateDuration -> updateOtherFields -> save
         if (request.getActionType() == ActionType.ADD) {
             handleAddAction(request, existingWorkload, year, month, transactionId);
         } else if (request.getActionType() == ActionType.DELETE) {
@@ -105,6 +108,9 @@ public class TrainerWorkloadService {
         }
     }
 
+    // TODO:
+    //  Probably after updating model to the nested structure you'll be able to simplify this method significantly.
+    //  Plus you can consider using mapstruct for mapping entities to DTOs
     @Transactional(readOnly = true)
     public TrainerWorkloadResponse getTrainerWorkload(String trainerUsername, String transactionId) {
         log.info("[TransactionId: {}] Fetching workload for trainer: {}", transactionId, trainerUsername);

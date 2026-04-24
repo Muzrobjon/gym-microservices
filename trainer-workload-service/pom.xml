@@ -111,7 +111,8 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>test</scope>
+            <!--          TODO:  If it's only for test, how can I run with in-memo db locally? -->
+            <!--            <scope>test</scope>-->
         </dependency>
     </dependencies>
     <dependencyManagement>

@@ -1,3 +1,7 @@
+// TODO:
+//  I'd recommend to flatten this package: SecurityConfig goes to existing config package, possibly under 'security'
+//  subpackage,JwtProvider can go there as well or under 'service' and JwtFilter goes to existing 'filter';
+
 package com.epam.gym.trainerworkloadservice.security;
 
 import jakarta.annotation.Nonnull;

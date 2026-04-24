@@ -39,6 +39,10 @@ public class TrainerWorkloadController {
         return ResponseEntity.ok().build();
     }
 
+    // TODO:
+    //  How can I request a workload for a particular month?
+    //  From the task:
+    //  'when requesting the number of training hours from any of the trainers in a particular month'
     @GetMapping("/{trainerUsername}")
     public ResponseEntity<TrainerWorkloadResponse> getTrainerWorkload(
             @PathVariable String trainerUsername,

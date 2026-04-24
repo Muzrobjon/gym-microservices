@@ -28,6 +28,11 @@ public class TrainerWorkload {
     @Column(name = "trainer_status", nullable = false)
     private Boolean trainerStatus;
 
+    // TODO:
+    //  This is a flat model, compared to the nested one specified in the task
+    //  It's not only denormalizes database with one row per trainer per month, but also
+    //  overcomplicates grouping and summing up the data in your service.
+    //  Please update according to the requirements
     @Column(name = "training_year", nullable = false)
     private Integer year;
 
